@@ -1,7 +1,7 @@
 package med.vol.api.controllers;
 
-import med.vol.api.model.Usuario;
-import med.vol.api.repository.UsuarioRepositpry;
+import med.vol.api.modelentity.Usuario;
+import med.vol.api.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class UsuarioController {
 
     @Autowired
-    private UsuarioRepositpry usuarioRepository;
+    private UsuarioRepository usuarioRepository;
 
     @GetMapping
     public List<Usuario> getAllUsuarios() {
